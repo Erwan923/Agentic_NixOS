@@ -1,0 +1,10 @@
+result
+*qcow2
+.wt
+.vscode
+*.log
+*.tmp
+output-*
+.direnv
+.git-hooks
+.hyde-cache
