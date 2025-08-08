@@ -86,7 +86,7 @@
 
   in {
     templates = import ./dev-shells;
-    overlays = import ./overlays { inherit inputs settings; };
+    overlays = {};
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
     nixosConfigurations = {
