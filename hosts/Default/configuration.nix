@@ -63,6 +63,12 @@
     })
   ];
 
+  # Activation de nix-index-database (système, pas HM)
+  programs.nix-index-database = {
+    enable = true;
+    comma.enable = true;
+  };
+
   # Paquets système
   environment.systemPackages = with pkgs; [ ];
 
@@ -86,6 +92,7 @@
       log_level = "error";
     };
   };
+
   users.users.minidlna = {
     extraGroups = [ "users" ];
   };
