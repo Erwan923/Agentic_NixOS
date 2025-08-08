@@ -59,7 +59,7 @@
 
     settings = {
       # User configuration
-      username = "zer0"; # automatically set with install.sh and live-install.sh
+      username = "r3v4n"; # automatically set with install.sh and live-install.sh
       editor = "nixvim"; # nixvim, vscode, nvchad, neovim, emacs (WIP)
       browser = "firefox"; # firefox, floorp, zen
       terminal = "kitty"; # kitty, alacritty, wezterm
@@ -69,12 +69,12 @@
 
       # System configuration
       videoDriver = "nvidia"; # nvidia, amdgpu or intel
-      hostname = "NixOS";
-      locale = "en_GB.UTF-8";
-      timezone = "Europe/London";
-      kbdLayout = "gb";
-      kbdVariant = "extd";
-      consoleKeymap = "uk";
+      hostname = "nixos";
+      locale = "fr_FR.UTF-8";
+      timezone = "Europe/Paris";
+      kbdLayout = "fr";
+      kbdVariant = "";
+      consoleKeymap = "fr";
     };
 
     systems = [

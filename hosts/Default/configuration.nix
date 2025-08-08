@@ -1,5 +1,4 @@
-{
-  pkgs,
+{ pkgs,
   videoDriver,
   hostname,
   browser,
@@ -41,7 +40,7 @@
     ../../modules/programs/misc/lact
   ];
 
-  # Home-Manager : paquets + Hydenix
+  # Home-Manager : paquets (sans HM Hydenix)
   home-manager.sharedModules = [
     (_: {
       home.packages = with pkgs; [
@@ -50,16 +49,11 @@
       ];
     })
 
-    # ➜ Import des modules HM Hydenix
-    (import ../../hydenix/modules/hm)
-
-    # ➜ Activation des options Hydenix HM
+    # ➜ Activation manuelle des options HM si besoin (sans import)
     (_: {
-      hydenix.hm.enable = true;
-      hydenix.hm.hyprland.enable = true;
-
-      hydenix.hm.theme.enable = true;
-      hydenix.hm.theme.active = "Catppuccin Mocha"; # ou "Catppuccin Latte"
+      hydenix.hm.enable = false;
+      hydenix.hm.hyprland.enable = false;
+      hydenix.hm.theme.enable = false;
     })
   ];
 
