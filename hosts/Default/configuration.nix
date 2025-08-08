@@ -51,9 +51,6 @@
 
     # ➜ Activation manuelle des options HM si besoin (sans import)
     (_: {
-      hydenix.hm.enable = false;
-      hydenix.hm.hyprland.enable = false;
-      hydenix.hm.theme.enable = false;
     })
   ];
 
