@@ -180,18 +180,14 @@
         "nixos-hardware": "nixos-hardware"
       },
       "locked": {
-        "lastModified": 1754539113,
-        "narHash": "sha256-xQRqPb8qdEhTKTDSTzK07Z/nhFQ6Dkhutnq4WiQDeAE=",
-        "owner": "richen604",
-        "repo": "hydenix",
-        "rev": "44659120af2042b8045b5984be328e9e06c6c01e",
-        "type": "github"
+        "path": "./hydenix",
+        "type": "path"
       },
       "original": {
-        "owner": "richen604",
-        "repo": "hydenix",
-        "type": "github"
-      }
+        "path": "./hydenix",
+        "type": "path"
+      },
+      "parent": []
     },
     "hydenix-nixpkgs": {
       "locked": {
