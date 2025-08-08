@@ -41,7 +41,7 @@
     ../../modules/programs/misc/lact
   ];
 
-  # Home-Manager : on garde tes paquets ET on active Hydenix HM (thème + hyprland)
+  # Home-Manager : paquets + Hydenix
   home-manager.sharedModules = [
     (_: {
       home.packages = with pkgs; [
@@ -50,7 +50,7 @@
       ];
     })
 
-    # ➜ Import des modules HM Hydenix (graphs, thèmes, hyprland configs…)
+    # ➜ Import des modules HM Hydenix
     (import ../../hydenix/modules/hm)
 
     # ➜ Activation des options Hydenix HM
@@ -63,14 +63,11 @@
     })
   ];
 
-  # Activation de nix-index-database (système, pas HM)
-  programs.nix-index-database = {
-    enable = true;
-    comma.enable = true;
-  };
-
   # Paquets système
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [
+    nix-index
+    comma
+  ];
 
   # Hostname (vient des settings du flake)
   networking.hostName = hostname;
@@ -92,7 +89,6 @@
       log_level = "error";
     };
   };
-
   users.users.minidlna = {
     extraGroups = [ "users" ];
   };

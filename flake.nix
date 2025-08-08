@@ -47,7 +47,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hydenix.url = "github:richen604/hydenix";
+    hydenix.url = "path:./hydenix";
   };
 
   outputs = {
