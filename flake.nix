@@ -47,7 +47,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hydenix.url = "path:./hydenix";
+# hydenix input removed
   };
 
   outputs = {
