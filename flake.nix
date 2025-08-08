@@ -37,6 +37,7 @@
       url = "github:nix-community/nix4nvchad";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hydenix.url = "github:richen604/hydenix";
   };
 
   outputs = {
