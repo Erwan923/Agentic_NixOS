@@ -1,4 +1,4 @@
-{ pkgs,
+{ pkgs,config,
   videoDriver,
   hostname,
   browser,
@@ -58,8 +58,20 @@
   environment.systemPackages = with pkgs; [
     nix-index
     comma
+    ansible
+    terraform
+    k3d
+    kubectl
+    k9s
+    helm
+    git
+    docker
   ];
 
+  # Docker (service + groupe)
+  virtualisation.docker.enable = true;
+  # Ajoute l'utilisateur au groupe docker sans toucher à users.users.r3v4n.extraGroups
+  users.groups.docker.members = [ "r3v4n" ];  
   # Hostname (vient des settings du flake)
   networking.hostName = hostname;
 

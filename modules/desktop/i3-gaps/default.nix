@@ -5,7 +5,7 @@
 }: {
   fonts.packages = with pkgs.nerd-fonts; [jetbrains-mono];
   imports = [
-    ../../themes/Catppuccin # Catppuccin GTK and QT themes
+    ../../themes/Dracula # Catppuccin GTK and QT themes
     ../hyprland/programs/dunst
     # ../hyprland/programs/dunst
   ];
