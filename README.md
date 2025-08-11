@@ -4,7 +4,7 @@ cp -f ~/Pictures/Agentic_NIXOS.png assets/
 
 cat > README.md <<'EOF'
 <div align="center">
-  <img src="./assets/Agentic_NIXOS.png" alt="Agentic NixOS" width="280">
+  <img src="./assets/Agentic_NixOS.png" alt="Agentic NixOS" width="280">
   
   # Agentic NixOS
   
