@@ -34,13 +34,13 @@
 
 ## 🚀 What Makes This Special?
 
-Fork of [**Sly-Harvey/NixOS**](https://github.com/Sly-Harvey/NixOS) enhanced with **production-ready security** and **AI-powered development tools**:
+This configuration transforms NixOS into a **professional DevOps workstation** that prioritizes both security and productivity. Based on [**Sly-Harvey/NixOS**](https://github.com/Sly-Harvey/NixOS), it adds enterprise-grade security and AI-powered workflows.
 
-**🔒 Security First**: AppArmor + Firewall + Network hardening  
-**🤖 AI Integration**: kubectl-ai, gemini-cli, codex for intelligent workflows  
-**📦 Secure Containers**: Rootless Podman + Distrobox for isolated development  
-**🎨 Beautiful Desktop**: Catppuccin theme with Hyprland compositor  
-**⚡ DevOps Ready**: Complete K8s + Docker + Infrastructure tools  
+**🔒 Security First**: Multiple protection layers (AppArmor + Firewall + Network hardening)  
+**🤖 AI Integration**: Natural language commands with kubectl-ai, gemini-cli, and codex  
+**📦 Secure Containers**: Rootless Podman + Distrobox for safe isolated development  
+**🎨 Beautiful Desktop**: Catppuccin Macchiato theme with Lavender accents and Colloid icons  
+**⚡ DevOps Ready**: Complete Kubernetes + Docker + Infrastructure-as-Code toolkit  
 
 ---
 
@@ -127,14 +127,33 @@ codex "write golang REST API"
 
 ---
 
-## 🎨 Theme System
+## 🎨 Visual Design
 
-- **Current**: Catppuccin Macchiato with Lavender accents
-- **Wallpaper**: Cyberpunk (switchable to: moon, dark-forest, kurzgesagt, fog, train)
-- **Consistency**: GTK4, Qt/Kvantum, Hyprland all match perfectly
+### Theme Details
+- **Color Palette**: Catppuccin Macchiato (dark, warm theme)
+- **Accent Color**: Lavender (#b4befe) for highlights and active elements
+- **Icons**: Colloid-teal-dark for modern, consistent iconography
+- **Font**: JetBrains Mono Nerd Font for terminal and UI
+- **Wallpaper**: Cyberpunk cityscape (easily customizable)
 
-**Switch themes**: Edit `flake.nix` line 49: `theme = "Dracula";`  
-**Switch wallpaper**: Edit `flake.nix` line 51: `wallpaper = "moon";`
+### Consistency Across the System
+The Lavender accent color flows through every component:
+- **Hyprland**: Window borders and focus indicators
+- **Waybar**: Active workspace and status highlights  
+- **GTK/Qt Apps**: Buttons, selections, and active states
+- **Terminal**: Prompt colors and syntax highlighting
+
+### Easy Customization
+```bash
+# Change theme (in flake.nix)
+theme = "Dracula";          # Switch to Dracula theme
+
+# Change wallpaper (in flake.nix)  
+wallpaper = "moon";         # Options: cyberpunk, moon, dark-forest, etc.
+
+# Rebuild to apply changes
+sudo nixos-rebuild switch --flake .#Default
+```
 
 ---
 
@@ -156,24 +175,48 @@ codex "write golang REST API"
 
 ## 🚀 Quick Start
 
+### 1. Clone and Setup
 ```bash
-# Clone and customize
-git clone <your-repo-url>
-cd nixos-config
+# Clone the repository
+git clone https://github.com/Erwan923/Agentic_NixOS.git
+cd Agentic_NixOS
 
-# Update username in flake.nix
-sed -i 's/username = "r3v4n"/username = "yourname"/' flake.nix
+# Customize for your system
+sed -i 's/username = "r3v4n"/username = "yourusername"/' flake.nix
+```
 
-# Apply configuration
+### 2. Install and Build
+```bash
+# Build and apply configuration
 sudo nixos-rebuild switch --flake .#Default
 
-# Create development environment
+# Reboot to ensure everything loads properly
+sudo reboot
+```
+
+### 3. Setup AI Tools (Optional)
+```bash
+# Create secure API key storage
+mkdir -p ~/.secrets && chmod 700 ~/.secrets
+
+# Add your API keys (get them from providers)
+echo "your-openai-key" > ~/.secrets/openai-key
+echo "your-gemini-key" > ~/.secrets/gemini-key
+chmod 600 ~/.secrets/*
+
+# Test AI integration
+kubectl ai "create nginx deployment"
+gemini-cli "explain kubernetes networking"
+```
+
+### 4. Development Environment
+```bash
+# Create isolated development container
 distrobox create --image ubuntu:22.04 dev-env
 distrobox enter dev-env
 
-# Use AI tools
-kubectl ai "create kubernetes dashboard"
-gemini-cli "explain this error message"
+# Inside container: install anything without affecting host
+apt update && apt install nodejs npm python3-pip
 ```
 
 ---
