@@ -16,6 +16,7 @@ in
     # Paquets liés au thème
     home.packages = [
       catppuccinKvantum
+      pkgs.colloid-icon-theme
       pkgs.papirus-icon-theme
       pkgs.bibata-cursors
       pkgs.nerd-fonts.jetbrains-mono
@@ -39,8 +40,8 @@ in
       };
 
       iconTheme = {
-        name    = lib.mkForce "Papirus-Dark";
-        package = lib.mkForce pkgs.papirus-icon-theme;
+        name    = lib.mkForce "Colloid-teal-dark";
+        package = lib.mkForce pkgs.colloid-icon-theme;
       };
 
       font = {

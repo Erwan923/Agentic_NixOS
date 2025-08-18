@@ -6,10 +6,11 @@
   terminalFileManager,
   kbdLayout,
   kbdVariant,
+  theme,
   ...
 }: {
   imports = [
-    ../../themes/Dracula # Catppuccin GTK and QT themes
+    ../../themes/${theme}
     ./programs/waybar
     ./programs/wlogout
     ./programs/rofi

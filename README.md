@@ -15,6 +15,23 @@
 
 ---
 
+## 📸 Screenshots
+
+<div align="center">
+
+### Desktop Environment
+<img src="./assets/desktop-cyberpunk.png" alt="Desktop with Cyberpunk wallpaper" width="600">
+
+### AI Integration & Terminal
+<img src="./assets/terminal-gemini-fastfetch.png" alt="Terminal with Gemini CLI and Fastfetch" width="600">
+
+### Clean Interface
+<img src="./assets/desktop-clean.png" alt="Clean Hyprland interface" width="600">
+
+</div>
+
+---
+
 ## 🚀 What Makes This Special?
 
 Fork of [**Sly-Harvey/NixOS**](https://github.com/Sly-Harvey/NixOS) enhanced with **production-ready security** and **AI-powered development tools**:

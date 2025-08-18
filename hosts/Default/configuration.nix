@@ -29,6 +29,7 @@
     ../../modules/programs/cli/lazygit
     ../../modules/programs/cli/cava
     ../../modules/programs/cli/btop
+    ../../modules/programs/cli/fastfetch
     ../../modules/programs/shell/bash
     ../../modules/programs/shell/zsh
     ../../modules/programs/media/discord
@@ -134,6 +135,7 @@
     curl jq btop iotop nethogs nmap tree wget rsync p7zip zip unzip
     obs-studio gimp inkscape blender
     brave librewolf
+    claude-code
   ];
 
   # Configuration home-manager utilisateur
