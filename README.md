@@ -15,18 +15,15 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots & Demo
 
 <div align="center">
 
-### Desktop Environment
-<img src="./assets/desktop-cyberpunk.png" alt="Desktop with Cyberpunk wallpaper" width="600">
-
-### AI Integration & Terminal
-<img src="./assets/terminal-gemini-fastfetch.png" alt="Terminal with Gemini CLI and Fastfetch" width="600">
-
-### Clean Interface
-<img src="./assets/desktop-clean.png" alt="Clean Hyprland interface" width="600">
+### 🎥 Live Demo
+<video width="600" controls>
+  <source src="./assets/Présentation.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
 
 </div>
 
@@ -81,6 +78,10 @@ kubectl ai "create nginx deployment"  # Secure by design
 ---
 
 ## 📦 Container Architecture
+
+<div align="center">
+<img src="./assets/image.png" alt="Container Architecture Diagram" width="600">
+</div>
 
 **Why containers matter**: Traditional package managers can break NixOS. Our solution? Secure, persistent container environments.
 
