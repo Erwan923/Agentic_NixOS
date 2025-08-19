@@ -19,8 +19,8 @@
 
 <div align="center">
 
-### Desktop Environment
-<img src="./assets/desktop-cyberpunk.png" alt="Desktop with Cyberpunk wallpaper" width="600">
+### 🎥 Live Demo
+<img src="./assets/demo.gif" alt="Live demo of Agentic NixOS" width="600">
 
 </div>
 
