@@ -19,9 +19,8 @@
 
 <div align="center">
 
-### 🎥 Live Demo
-
-https://github.com/Erwan923/Agentic_NixOS/assets/Présentation.mov
+### Desktop Environment
+<img src="./assets/desktop-cyberpunk.png" alt="Desktop with Cyberpunk wallpaper" width="600">
 
 </div>
 
