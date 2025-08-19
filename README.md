@@ -20,10 +20,8 @@
 <div align="center">
 
 ### 🎥 Live Demo
-<video width="600" controls>
-  <source src="./assets/Présentation.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/Erwan923/Agentic_NixOS/assets/Présentation.mov
 
 </div>
 
