@@ -38,6 +38,7 @@
     ../../modules/programs/misc/tlp
     ../../modules/programs/misc/thunar
     ../../modules/programs/misc/lact
+    ../../modules/programs/misc/rustdesk
   ];
 
   nixpkgs.config.allowUnfree = true;

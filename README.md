@@ -226,6 +226,7 @@ apt update && apt install nodejs npm python3-pip
 - **VSCode** (with extensions)
 - **Obsidian** (note-taking)
 - **Bitwarden** (password manager)
+- **RustDesk** (remote desktop)
 - **OBS Studio** (streaming)
 - **GIMP & Inkscape** (graphics)
 
